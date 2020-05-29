@@ -1,7 +1,7 @@
   window.onbeforeunload = function () {
     window.scrollTo(0, 0);
   }
-console.log("loaded")
+
 class Graph{
   
   static contexts = {}
@@ -146,7 +146,6 @@ class Graph{
       
   }
   constructor(canvasid, fps=60, editable=true, buildable=true, loadContext=null){
-
       this.canvas = document.getElementById(canvasid);
       this.ctx = this.canvas.getContext('2d');
       this.objs = {};
@@ -460,6 +459,7 @@ class Graph{
   }
 
   async depthFirstSearch(startid, endid, draw_path, delay=0){
+    console.log("inside function")
     let discovered_stack = [{"nodeid":startid, "parentid":startid}]
     let visited = {}
     function getPath(nodeobj, draw_path=true){
@@ -475,6 +475,7 @@ class Graph{
     }
     getPath = getPath.bind(this);
     let evaulateNode = function(nodeobject){
+      console.log("here")
       if(visited.hasOwnProperty(nodeobject.nodeid)){
         return evaulateNode(discovered_stack.shift());
       }
@@ -513,6 +514,7 @@ class Graph{
       return path;
     }
     getPath = getPath.bind(this);
+    console.log(discovered)
     for(let i = 0; i<discovered.length; i++){
       if(visited.hasOwnProperty(discovered[i].node)){
         continue;
@@ -609,9 +611,6 @@ class Graph{
 
     let start = this.getNodeById(startid);
     let end = this.getNodeById(endid);
-    if(start || end === undefined){
-      return;
-    }
     let visited = {}
     let data = {}
     let discovered = new Graph.priorityQueue();
@@ -1226,10 +1225,6 @@ Graph._node = function(contextid, x=false, y=false, r=false, text=""){
 
 }
 
-Graph.functions = {
-  "end":()=>{}
-
-                  }
-
+Graph.functions = {}
 
 
