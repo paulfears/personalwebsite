@@ -11,3 +11,9 @@
     fullWidth: true,
     indicators: true
   });
+  $(document).ready(function(){
+    $('.fixed-action-btn').floatingActionButton();
+  });
+  $(document).ready(function(){
+    $('.modal').modal();
+  });

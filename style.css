@@ -63,6 +63,7 @@ ul li .jumplink:hover {
 }
 ul li h5{
   position: relative;
+  font: 'Courier New', Courier, monospace;
 }
 ul li h5:hover{
   text-decoration: underline;

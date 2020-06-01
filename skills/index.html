@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="../style.css" rel="stylesheet" type="text/css" />
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  </head>
+  <body>
+     <header>
+     <ul id="sidebar" id="navbar" style="width: 300px;" class="sidenav sidenav-fixed">
+       
+       <li style="background:url(../img/abstract.jpg) ">
+        <div style="height: 25px;">
+
+        </div>
+        
+         <div class="row">
+          <div class="col s4">
+            <img src="../img/me2.jpeg" class="responsive-img circle">
+          </div>
+          <div class="col s8">
+            <a href="/"><h5>Paul Fears</h5></a>
+            <p>Tool Builder</p>
+          </div>
+         </div>
+       </li>
+       <li class="center-align">
+         <div style="background-color: rgba(0,0,0,0)"class="container">
+          <div class="row">
+            <div class="col s3 center-align">
+              <a  href="https://github.com/paulfears"><img src="../img/github.png"/></a>
+            </div>
+            <div class="col s3">
+              <a  href="https://www.instagram.com/paul.fears.18/"><img style="width:32px; height:32px;"src="../img/replit-icon.png"/></a>
+            </div>
+            <div class="col s3">
+              <a  href="https://www.linkedin.com/in/paul-fears/"><img style="width:32px; height:32px;" src="../img/linkedin.png"/></a>
+            </div>
+            <div class="col s3">
+              <a  href="https://news.ycombinator.com/user?id=paulfears"><img style="width:32px; height32px;" src="../img/hacker_news.webp"></a>
+            </div>
+          </div>
+         </div>
+        
+       </li>
+
+       <li style="cursor: pointer;" onclick="window.location.href = '/projects'">
+         <div class="hoverable center-align z-depth-3 link_holster">
+          <h5>Projects</h5>
+         </div>
+       </li>
+       <li style="cursor: pointer;" onclick="window.location.href = '/skills'">
+         <div class="hoverable center-align z-depth-3 link_holster">
+          <h5>skills/technologies</h5>
+         </div>
+       </li>
+       <li style="cursor: pointer;" onclick="window.location.href = '/about'">
+         <div class="hoverable center-align z-depth-3 link_holster">
+          <h5>About Me</h5>
+         </div>
+       </li>
+       
+       
+     </ul>
+     </header>
+     <nav style="background-color: var(--dark-color)">
+         <a class="sidenav-trigger pointer" data-target="sidebar" ><i class="material-icons">menu</i></a>
+         <a href="/"><p style="margin:0px">Paul Fears</p></a>
+         
+      </nav>
+     <main>
+
+       <div class="container transparent">
+          <div class="card transparent">
+            <div class="card-title"><a style="background-color: var(--dark-color)" class="btn-floating" href="/"><i class="material-icons">arrow_back</i></a> skills/technologies</div>
+            <span class="card-body"><h6></h6></span>
+            <br>
+            <div class="card-action">
+            </div>
+          </div>
+          <p class="black-text flow-text">Skills</p>
+          <div class = "row center-align">
+            <div class = "col s3 m2 ">
+              <div class="card transparent center-align">
+                <div class="card-title center-align"><h6>Python</h6></div>
+                <div class="card-body">
+                  <img class="responsive-img center-align" src="../img/skills/python.svg"/>
+                </div>
+              </div>
+            </div>
+            <div class = "col s3 m2">
+              <div class="card transparent">
+                <div class="card-title center-align "><h6>JS</h6></div>
+                <div class="card-body">
+                  <img class="responsive-img" src="../img/skills/javascript.svg"/>
+                </div>
+              </div>
+            </div>
+             <div class = "col s3 m2">
+              <div class="card transparent">
+                <div class="card-title center-align"><h6>Java</h6></div>
+                <div class="card-body center-align">
+                  <img class="responsive-img" src="../img/skills/Java.png"/>
+                </div>
+              </div>
+            </div>
+            <div class = "col s3 m2">
+              <div class="card transparent">
+                <div class="card-title center-align"><h6>PHP</h6></div>
+                <div class="card-body">
+                  <img class="responsive-img" src="../img/skills/php.png"/>
+                </div>
+              </div>
+            </div>
+            <div class = "col s3 m2">
+              <div class="card transparent">
+                <div class="card-title center-align"><h6>HTML</h6></div>
+                <div class="card-body">
+                  <img class="responsive-img" src="../img/skills/html.png"/>
+                </div>
+              </div>
+            </div>
+            <div class = "col s3 m2">
+              <div class="card transparent">
+                <div class="card-title center-align"><h6>CSS</h6></div>
+                <div class="card-body">
+                  <img class="responsive-img" src="../img/skills/css-3.png"/>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="black-text flow-text">Technologies</p>
+          <div class="row">
+            <div class="col s3 m2">
+              <div class="card transparent">
+                <div class="card-title center-align"><h6>Ajax</h6></div>
+                <div class="card-body">
+                  <img class="responsive-img" src="../img/skills/ajax.png">
+                </div>
+              </div>
+            </div>
+            <div class="col s3 m2">
+              <div class="card transparent">
+                <div class="card-title center-align"><h6>SQL</h6></div>
+                <div class="card-body">
+                  <img class="responsive-img" src="../img/skills/mysql.webp">
+                </div>
+              </div>
+            </div>
+            <div class="col s3 m2">
+              <div class="card transparent">
+                <div class="card-title center-align"><h6>Material CSS</h6></div>
+                <div class="card-body">
+                  <img class="responsive-img" src="../img/skills/matcss.png">
+                </div>
+              </div>
+            </div>
+            <div class="col s3 m2">
+              <div class="card transparent">
+                <div class="card-title center-align"><h6>Firebase</h6></div>
+                <div class="card-body">
+                  <img class="responsive-img" src="../img/skills/firebase.png">
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+       
+       </div>
+       <br>
+       <br>
+
+      <div class="modal" id="email_menu">
+        <div class="modal-content">
+          <h4>Reach Out</h4>
+          <p></p>
+          </p>Email: paulrfears@gmail.com<br>Phone: 3146203239</p>
+          <br>
+            <a style="color: var(--dark-color);" href="mailto: paulrfears@gmail.com" class="btn white-text">email</a>
+        </div>
+      </div>
+      <div class="fixed-action-btn">
+        <a style="background-color: var(--dark-color);" class="btn-floating btn-large  modal-trigger" href="#email_menu">
+          <i class="material-icons">email</i>
+        </a>
+      </div>
+
+     </main>
+
+       
+   <script src="../script.js"></script>
+  
+  </body>
+</html>
