@@ -1,6 +1,6 @@
 
 <svg class="waves_divide" viewBox="0 24 150 28 " preserveAspectRatio="none" id="top_wave" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<foreignObject>
+	
 		
 			<style>
 .waves_divide{
@@ -91,5 +91,5 @@
                <g class="parallax4"> <use xlink:href="#gentle-wave" x="50" y="6" fill="#fff"/> </g>               
                </div>
                
-</foreignObject>
+
 </svg>
