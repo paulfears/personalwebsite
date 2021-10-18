@@ -19,25 +19,25 @@
   transform: translate(180deg);
 }
 .parallax1 > use {
-  animation: move-forever1 10s linear infinite;
+  animation: move-forever1 12s linear infinite;
   
   
   
   
 }
 .parallax2 > use {
-  animation: move-forever2 8s linear infinite;
+  animation: move-forever2 10s linear infinite;
   
   animation-delay: -2.5s;
   
   
 }
 .parallax3 > use {
-  animation: move-forever3 6s linear infinite;
+  animation: move-forever3 8s linear infinite;
   
 }
 .parallax4 > use {
-  animation: move-forever4 4s linear infinite;
+  animation: move-forever4 6s linear infinite;
   
   animation-delay: -2s;
   
