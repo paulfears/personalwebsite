@@ -153,7 +153,7 @@
           <rect  width="500" rx="15" y="150" x="0" height="500"/>
           <text class="title" x="150" y="190" fill="white">Projects</text>
           <a href="https://gifexplosion.com"><text x="250" y="250" fill="white" >gifexplosion.com</text></a>
-          
+          <a href=""
           
         </g> 
         
@@ -195,7 +195,7 @@
           <text x="250" y="240" fill="white" >phone: 314-620-3239</text>
           <text x="250" y="260" fill="white" >gmail: paulrfears@gmail.com</text>
           <a href="paulrfears.com"><text x="250" y="300" fill="white" >paulrfears.com</text></a>
-          <image x="175" y="320" width="150" height="150" href="paulrfears.com/bubbles.svg"/> 
+          
         </g> 
       </g>
     </svg>
