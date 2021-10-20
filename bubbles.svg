@@ -1,0 +1,201 @@
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="500" height="500">
+      <style>
+        .icon{
+          transition: all 0.35s ease;
+        }
+        .icon:active{
+          filter: blur(5px);
+          cursor: pointer;
+          
+        }
+        
+        @keyframes grow-shrink{
+          0%{
+            transform: scale(1);
+            filter: blur(0px);
+          }
+          70%{
+            transform: scale(1);
+            filter: blur(0px);
+          }
+          85%{
+            transform: scale(.99);
+            filter: blur(1px);
+          }
+          90%{
+            transform: scale(.99);
+            filter: blur(1px);
+          }
+          100%{
+            transform: scale(1);
+            filter: blur(0px);
+          }
+          100%{
+            transform: scale(1);
+            filter: blur(0px);
+          }
+
+        }
+
+        @keyframes expand{
+          0%{
+            transform: scale(0);
+          }
+          100%{
+            transform: scale(3);
+          }
+        }
+
+        @keyframes slide-in{
+          0%{
+            transform: translateY(600px)
+          }
+          90%{
+            transform: translateY(10px)
+          }
+          95%{
+            transform: translateY(-5px);
+          }
+          100%{
+            transform: translateY(0px);
+          }
+        }
+        
+        @keyframes slide-out{
+          0%{
+            transform: translateY(0px);
+            
+          }
+          100%{
+           transform: translateY(600px);
+          
+          }
+        } 
+
+        #circle1{
+          animation-delay:-3s;
+          transition: all 0.5s ease;
+          transform: scale(1);
+        }
+       
+        
+        #circle2{
+          animation-delay: 6s;
+        }
+        #circle3{
+          animation-delay: 5s;
+        }
+        #circle4{
+          animation-delay: -1s;
+        }
+
+        .popup{
+          animation-name: slide-out;
+          animation-direction: forwards;
+          animation-timing-function: ease;
+          animation-duration: 0.7s;
+          animation-fill-mode: forwards;
+          
+        }
+        
+        .popup:hover{
+          animation-name: slide-in;
+          animation-direction: forwards;
+          animation-timing-function: ease;
+          animation-duration: 0.7s;
+          animation-fill-mode: forwards;
+
+        }
+        .popup:hover + .icon{
+          filter: blur(5px);
+        }
+        .icon{
+          animation-name: grow-shrink;
+          animation-duration: 5s;
+          animation-timing-function: ease;
+          animation-iteration-count: infinite;
+        }
+        .icon:hover ~ .popup{
+          animation-name: slide-in;
+          animation-direction: forwards;
+          animation-duration: 0.5s;
+          animation-timing-function: linear;
+          animation-fill-mode: forwards;
+        }
+
+        .button {
+          font: 11px Arial;
+          text-decoration: none;
+          background-color: #EEEEEE;
+          color: #333333;
+          padding: 2px 6px 2px 6px;
+          border-top: 1px solid #CCCCCC;
+          border-right: 1px solid #333333;
+          border-bottom: 1px solid #333333;
+          border-left: 1px solid #CCCCCC;
+          }
+        text{
+          text-anchor:middle;
+          font: 15px Arial;
+        }
+        .title{
+          font: 25px Arial;
+        }
+        
+      </style>
+
+      <g id="icon1">
+        
+        <circle id="circle1" class="icon" r="90" cx="120" cy="120" 
+        fill="#9D8DF1" />
+        
+        <g class="popup">
+          <rect  width="500" rx="15" y="150" x="0" height="500"/>
+          <text class="title" x="150" y="190" fill="white">Projects</text>
+          <a href="https://gifexplosion.com"><text x="250" y="250" fill="white" >gifexplosion.com</text></a>
+          
+          
+        </g> 
+        
+      
+      </g>
+
+      <g id="icon2">
+        <circle id="circle2" class="icon" r="90" cx="360" cy="120" fill="white"  />
+        <g class="popup">
+          <rect  width="500" rx="15" y="150" x="0" height="500"/>
+          <text x="250" y="180" fill="white" >Technologies</text>
+          <image
+          x="250"
+          y="200"
+          width="50"
+          height="50" 
+          href="https://paulrfears.com/img/skills/soldity.png"/>
+          <image
+          x="200"
+          y="200"
+          width="50"
+          height="50" 
+          href="https://paulrfears.com/img/skills/web3.png"/>  
+        </g> 
+      </g>
+      <g id="icon3">
+        <circle id="circle3" class="icon" fill="#E4FF1A" cx="120" cy="360" r="90"/>
+        <g class="popup">
+          <rect  width="500" rx="15" y="150" x="0" height="500"/>
+          <text x="250" y="220" fill="white" >UI / UX</text>
+          <image x="0" y="420" height="80" width="500" href="https://paulrfears.com/waves_top.svg"/>
+        </g> 
+      </g>
+      <g  id="icon4">
+        <circle id="circle4" class="icon" fill="#3461c1" r="90" cx="360" cy="360" />
+        <g class="popup">
+          <rect  width="500" rx="15" y="150" x="0" height="500"/>
+          <text x="250" y="190" fill="white" >Contact</text>
+          <text x="250" y="240" fill="white" >phone: 314-620-3239</text>
+          <text x="250" y="260" fill="white" >gmail: paulrfears@gmail.com</text>
+          <a href="paulrfears.com"><text x="250" y="300" fill="white" >paulrfears.com</text></a>
+          <image x="175" y="320" width="150" height="150" href="paulrfears.com/bubbles.svg"/> 
+        </g> 
+      </g>
+    </svg>
