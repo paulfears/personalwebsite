@@ -17,7 +17,13 @@
   background-color: black!important;
   height: 1px!important;
 }
-
+#big_photo{
+  filter: sepia(100%) blur(10px);
+  border-radius: 10px;
+}
+#big_photo:hover{
+  filter: sepia(100%);
+}
 .card{
   padding: 10px;
   border: none!important;
